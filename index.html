@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+   <meta charset='UTF-8'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"> -->
+   <link rel='stylesheet' href='./css/global.css'>
+   <link rel="stylesheet" href="./css/index.css">
+   <link rel="stylesheet" href="./css/media.css">
+   <script src='./js/index.js' defer></script>
+   <title>Document</title>
+</head>
+<body>
+   <div class='wrapper'>
+      <header class='header'>
+         <nav class="header_menu">
+            <ul class="menu">
+               <li class="menu_item"><a href="./index.html" class="menu_link">Главная</a></li>
+               <li class="menu_item"><a href="./add.html" class="menu_link">Добавить</a></li>
+               <li class="menu_item"><a href="./profile.html" class="menu_link">Профиль</a></li>
+               <li class="menu_item"><a href="./admin.html" class="menu_link">Админка</a></li>
+               <li class="menu_item"><a href="./one-animal-page.html" class="menu_link">Найденыш</a></li>
+               <li class="menu_item"><a href="./search-page.html" class="menu_link">Искать</a></li>
+            </ul>
+         </nav>
+         <div class='container header_container'>
+            <div class="header_item">
+               <a role="button" class="header_burger">Menu</a>
+            </div>
+            <div class="header_item">
+               <a href="./index.html" class="header_logo logo">
+                  <img src="#" alt="LOGO">
+               </a>
+            </div>
+            <div class="header_item">
+               <div class="header_auth">
+                  <a href="./login.html" class="header_autth-link__mobile">
+                     <i class="bi bi-box-arrow-in-right"></i>
+                  </a>
+                  <a href="./register.html" class="header_autth-link__mobile">
+                     <i class="bi bi-box-arrow-right"></i>
+                  </a>
+                  <a href="./login.html" class="header_auth-link">Login</a>
+                  <a href="./register.html" class="header_auth-link">Register</a>
+               </div>
+            </div>
+         </div>
+      </header>
+
+<!--########################    Main    #########################################-->
+      <main class='main'>
+         <section id="hero" class="hero">
+            <h1 class="hero_title title_h1">Далеко-далеко за .</h1>
+            <div class="container hero_container">
+               <div class="hero_card">
+                  <h3 class="hero_card-title">Помогли найти более 500 животных.</h3>
+                  <div class="hero_card-img">
+                     <img src="http://placehold.it/330x330/" alt="">
+                  </div>
+               </div>
+               <div class="hero_card">
+                  <h3 class="hero_card-title">Более трех лет способствуем возвращению питмцев своим хозяевам.</h3>
+                  <div class="hero_card-img">
+                     <img src="https://avavatar.ru/images/original/1/Ecdbgc4LvsZQUXhy.jpg" alt="">
+                     <!-- <img src="http://placehold.it/330x330/" alt=""> -->
+                  </div>
+               </div>
+               <div class="hero_card">
+                  <h3 class="hero_card-title">Все услуги предоставляются бесплатно</h3>
+                  <div class="hero_card-img">
+                     <img src="https://avavatar.ru/images/full/24/fJorBCBBiX1MXaS6.jpg" alt="">
+                     <!-- <img src="http://placehold.it/330x330/" alt=""> -->
+                  </div>
+               </div>
+               <ul class="hero_list none">
+                  <li class="hero_list-item">Помогли найти более 500 животных.</li>
+                  <li class="hero_list-item">Более трех лет способствуем возвращению питмцев своим хозяевам.</li>
+                  <li class="hero_list-item">Все услуги предоставляются бесплатно</li>
+               </ul>
+            </div>
+         </section>
+
+         <section id="slider" class="slider">
+            <div class="container slider_container">
+               <div class="slider_wrapper">
+                  <div class="slider_row">
+                     <i class="bi bi-chevron-left"></i>
+                     <i class="bi bi-chevron-right"></i>
+                  </div>
+                  <h2 class="slider_title">найденыши</h2>
+                  <div class="slider_window">
+<!-- loop for each -->
+<!-- examle loop
+{{for item in data}}
+<img src="item.image(url)" alt="IMAGE ANIMAL">
+...
+-->
+                     <div class="slider_item card">
+                        <div class="card_header">
+                           <img src="http://placehold.it/300x300/" alt="IMAGE ANIMAL">
+                        </div>
+                        <div class="card_body">
+                           <p class="card_infoline">
+                              <strong >адрес находки:</strong>
+                              <span data-address="">{{data-address}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >тел. нашедшего:</strong>
+                              <span data-phone="">{{data-phone}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >дата размещения:</strong>
+                              <span data-date-added="">{{data-date-added}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >статус пользователя:</strong>
+                              <span data-user-status="">{{data-user-status}}</span>
+                           </p>
+                        </div>
+                        <div class="card_footer">
+                           <a href="./one-animal-page.html" class="card_link">
+                              подробнее
+                              <i class="bi bi-chevron-double-right"></i> 
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="slider_item card">
+                        <div class="card_header">
+                           <img src="http://placehold.it/300x300/" alt="IMAGE ANIMAL">
+                        </div>
+                        <div class="card_body">
+                           <p class="card_infoline">
+                              <strong >адрес находки:</strong>
+                              <span data-address="">{{data-address}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >тел. нашедшего:</strong>
+                              <span data-phone="">{{data-phone}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >дата размещения:</strong>
+                              <span data-date-added="">{{data-date-added}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >статус пользователя:</strong>
+                              <span data-user-status="">{{data-user-status}}</span>
+                           </p>
+                        </div>
+                        <div class="card_footer">
+                           <a href="./one-animal-page.html" class="card_link">
+                              подробнее
+                              <i class="bi bi-chevron-double-right"></i> 
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="slider_item card">
+                        <div class="card_header">
+                           <img src="http://placehold.it/300x300/" alt="IMAGE ANIMAL">
+                        </div>
+                        <div class="card_body">
+                           <p class="card_infoline">
+                              <strong >адрес находки:</strong>
+                              <span data-address="">{{data-address}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >тел. нашедшего:</strong>
+                              <span data-phone="">{{data-phone}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >дата размещения:</strong>
+                              <span data-date-added="">{{data-date-added}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >статус пользователя:</strong>
+                              <span data-user-status="">{{data-user-status}}</span>
+                           </p>
+                        </div>
+                        <div class="card_footer">
+                           <a href="./one-animal-page.html" class="card_link">
+                              подробнее
+                              <i class="bi bi-chevron-double-right"></i> 
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="slider_item card">
+                        <div class="card_header">
+                           <img src="http://placehold.it/300x300/" alt="IMAGE ANIMAL">
+                        </div>
+                        <div class="card_body">
+                           <p class="card_infoline">
+                              <strong >адрес находки:</strong>
+                              <span data-address="">{{data-address}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >тел. нашедшего:</strong>
+                              <span data-phone="">{{data-phone}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >дата размещения:</strong>
+                              <span data-date-added="">{{data-date-added}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >статус пользователя:</strong>
+                              <span data-user-status="">{{data-user-status}}</span>
+                           </p>
+                        </div>
+                        <div class="card_footer">
+                           <a href="./one-animal-page.html" class="card_link">
+                              подробнее
+                              <i class="bi bi-chevron-double-right"></i> 
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="slider_item card">
+                        <div class="card_header">
+                           <img src="http://placehold.it/300x300/" alt="IMAGE ANIMAL">
+                        </div>
+                        <div class="card_body">
+                           <p class="card_infoline">
+                              <strong >адрес находки:</strong>
+                              <span data-address="">{{data-address}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >тел. нашедшего:</strong>
+                              <span data-phone="">{{data-phone}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >дата размещения:</strong>
+                              <span data-date-added="">{{data-date-added}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >статус пользователя:</strong>
+                              <span data-user-status="">{{data-user-status}}</span>
+                           </p>
+                        </div>
+                        <div class="card_footer">
+                           <a href="./one-animal-page.html" class="card_link">
+                              подробнее
+                              <i class="bi bi-chevron-double-right"></i> 
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="slider_item card">
+                        <div class="card_header">
+                           <img src="http://placehold.it/300x300/" alt="IMAGE ANIMAL">
+                        </div>
+                        <div class="card_body">
+                           <p class="card_infoline">
+                              <strong >адрес находки:</strong>
+                              <span data-address="">{{data-address}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >тел. нашедшего:</strong>
+                              <span data-phone="">{{data-phone}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >дата размещения:</strong>
+                              <span data-date-added="">{{data-date-added}}</span>
+                           </p>
+                           <p class="card_infoline">
+                              <strong >статус пользователя:</strong>
+                              <span data-user-status="">{{data-user-status}}</span>
+                           </p>
+                        </div>
+                        <div class="card_footer">
+                           <a href="./one-animal-page.html" class="card_link">
+                              подробнее
+                              <i class="bi bi-chevron-double-right"></i> 
+                           </a>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class='footer'>
+         <div class="container footer_container">
+            <div class="footer_contacts footer_item">
+               <ul class="footer_list">
+                  <li class="footer_list-item menu_item">
+                     <a href="tel:+81234567890" class="menu_link">тел.: 81234567890</a>
+                  </li>
+                  <li class="footer_list-item menu_item">
+                     <a class="menu_link" href="mailto:example@example.com">email: example@example.com</a>
+                  </li>
+                  <li class="footer_list-item">2024 &copy; Все права защищены</li>
+               </ul>
+            </div>
+            <div class="footer_item">
+               <a href="./index.html" class="logo">
+                  <img src="#" alt="LOGO">
+               </a>
+            </div>
+            <div class="footer_menu footer_item">
+               <ul class="footer_list menu">
+                  <li class="menu_item"><a href="./index.html" class="menu_link">Главная</a></li>
+                  <li class="menu_item"><a href="./login.html" class="menu_link">авторизация</a></li>
+                  <li class="menu_item"><a href="./register.html" class="menu_link">регистрация</a></li>
+                  <li class="menu_item"><a href="./search-page.html" class="menu_link">искать</a></li>
+                  <li class="menu_item"><a href="./profile.html" class="menu_link">профиль</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+   </div>
+</body>
+<html/>

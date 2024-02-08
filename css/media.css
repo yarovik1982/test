@@ -1,0 +1,9 @@
+@media(max-width:476px) {
+   .header_autth-link__mobile {
+      display:inline-block;
+   }
+
+   .header_auth-link {
+      display: none;
+   }
+}
