@@ -1,18 +1,10 @@
-const burgerMenu = () => {
-   console.log("work");
-   const burger = document.querySelector('.header_burger')
+import { useBurger } from "./modules/burger.js";
+import { toggleTypeInput } from "./modules/toggleTypeInput.js";
+ 
+const burger = document.querySelector(".header_burger");
+const checkboxes = document.querySelectorAll(".inpCheckTogglerPass");
 
-   const toggleMenu = () => {
-      const header = document.querySelector('.header')
-      const headerHeight = window.getComputedStyle(header).height
-      console.log(headerHeight);
-      const menu = document.querySelector('.header_menu')
-      menu.classList.toggle('show')
-      menu.style.paddingTop = headerHeight
-   }
+useBurger(burger);
+toggleTypeInput(checkboxes);
 
-   burger.addEventListener('click', toggleMenu)
-   
-   
-}
-burgerMenu()
+

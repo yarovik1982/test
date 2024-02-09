@@ -35,7 +35,9 @@ body {
 a {
    text-decoration: none;
 }
-
+a,p,h1,h2,h3,h4,h5,h6,label,button{
+   text-transform: capitalize;
+}
 .container {
    max-width: 90vw;
    margin: 0 auto;
@@ -154,7 +156,9 @@ a {
 section{
    margin-bottom:  5rem;
 }
-
+.none{
+   display: none;
+}
 .footer {
    padding: 0.5rem 0;
    background-color: var(--header-bg);
@@ -180,3 +184,61 @@ section{
    font-size: 1.2rem;
    color: var(--header-color);
 }
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.flex {
+   max-width: 1200px;
+   margin: 50px auto;
+   display: flex;
+   align-items: center;
+}
+.flex_item {
+   flex:1 25%;
+   padding: 40px 0;
+   background-color: #ccc;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+}
+.flex_item:nth-child(2){
+   flex:1 50%;
+   padding: 50px 20px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   background-color: #05012a;
+   
+}
+.flex_flex {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   width: 100%;
+   padding: 20px 0;
+}
+.flex_item::after{
+   position: absolute;
+   content:attr(data-title);
+   color:black;
+   font-size: 40px;
+   top: -50px;
+   left: 50%;
+   transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -o-transform: translateX(-50%);
+   width: fit-content;
+   height: fit-content;
+}
+.flex_img {
+   max-width: 150px;
+   width: 80%;
+   aspect-ratio: 1/1;
+   border-radius: 50%;
+   background-color: teal;
+}
+/* ============= */
