@@ -5,9 +5,10 @@
    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
    <link rel='stylesheet' href='./css/global.css'>
+   <link rel="stylesheet" href="./css/login.css">
    <link rel="stylesheet" href="./css/media.css">
-   <script src='./js/index.js' defer></script>
-   <title>Document</title>
+   <script src='./js/index.js' defer type="module"></script>
+   <title>Register Page</title>
 </head>
 <body>
    <div class='wrapper'>
@@ -46,7 +47,45 @@
          </div>
       </header>
       <main class='main'>
-         
+         <div class="container main_container">
+            <form action="#" class="form main_form main_form-login" id="register">
+               <div class="form_header">
+                  <h3 class="form_title">регистрация</h3>
+               </div>
+               <div class="form_body">
+                  <div class="form_row">
+                     <label for="inpEmail" class="form_label">Email</label>
+                     <input type="email" class="form_input" id="inpEmail">
+                  </div>
+                  <div class="form_row" data-area-password="false">
+                     <label for="inpPass" class="form_label">Password</label>
+                     <input type="password" class="form_input" id="inpPass">
+                     <label for="inpCheckTogglerPass" class="form_inp-toggler">
+                        <input type="checkbox" name="inpCheckTogglerPass" id="inpCheckTogglerPass" class="inpCheckTogglerPass" data-type>
+                        <i class="bi bi-eye-slash"></i>
+                        <i class="bi bi-eye"></i>
+                     </label>
+                  </div>
+                  <div class="form_row" data-area-password="false">
+                     <label for="inpPassConfirm" class="form_label">Duplicate Password</label>
+                     <input type="password" class="form_input" id="inpPassConfirm">
+                     <label for="inpCheckTogglerPassConfirm" class="form_inp-toggler">
+                        <input type="checkbox" name="inpCheckTogglerPassConfirm" id="inpCheckTogglerPassConfirm" class="inpCheckTogglerPass" data-type>
+                        <i class="bi bi-eye-slash"></i>
+                        <i class="bi bi-eye"></i>
+                     </label>
+                     
+                  </div>
+                  <div class="form_row form_row-checkbox">
+                     <label for="inpAgree" class="form_label">Agree</label>
+                     <input type="checkbox" class="form_input-check" id="inpAgree" checked>
+                  </div>
+               </div>
+               <div class="form_footer">
+                  <button type="submit" class="form_submit">отправить</button>
+               </div>
+            </form>
+         </div>
       </main>
       <footer class='footer'>
          <div class="container footer_container">
